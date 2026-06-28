@@ -10,6 +10,5 @@ export const loginService = (loginData) => {
 }
 
 export const getUserInfoService = () => {
-  return request.get('/user/test');  
-}
+  return request.get('/user/test');
 }
