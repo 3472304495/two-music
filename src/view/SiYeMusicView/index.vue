@@ -76,19 +76,17 @@ onMounted(() => {
 /* 全局布局样式 */
 .app-wrapper {
   background: linear-gradient(135deg, #f5f7fa 0%, #e8f5e9 100%);
-  height: calc(100vh - 77px);
+  max-height: calc(100vh - 77px);
   overflow: hidden;
   width: 100%;
   max-width: 100vw;
-  display: flex;
-  flex-direction: column;
 }
 
 .main-layout {
   display: flex;
   width: 100%;
   max-width: 100vw;
-  flex: 1;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -106,6 +104,7 @@ onMounted(() => {
   padding: 20px;
   overflow-y: auto;
   flex: 1;
+  min-height: 0;
 }
 
 /* 过渡动画 */
@@ -120,13 +119,3 @@ onMounted(() => {
 }
 </style>
 
-<style>
-/* 全局样式重置 */
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-</style>
