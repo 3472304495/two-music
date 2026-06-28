@@ -419,13 +419,9 @@
 }
 
 /* 播放列表面板样式 */
-#playlist-toggle:checked ~ .playlist-panel {
-  display: block;
-}
-
 .playlist-panel {
   display: none;
-  position: fixed;
+  position: absolute;
   bottom: 77px;
   right: 20px;
   width: 400px;
